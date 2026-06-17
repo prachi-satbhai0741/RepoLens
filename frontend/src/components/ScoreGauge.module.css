@@ -1,0 +1,20 @@
+.wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  position: absolute;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.large .label {
+  font-size: 1.4rem;
+}
+
+.small .label {
+  font-size: 0.75rem;
+}
