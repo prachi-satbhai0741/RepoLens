@@ -25,6 +25,6 @@ app.route('/api/search', searchRoutes);
 // Start server
 const port = parseInt(process.env.PORT || '5000', 10);
 
-serve({ fetch: app.fetch, port }, () => {
-  console.log(`🔍 RepoLens API running on http://localhost:${port}`);
+serve({ fetch: app.fetch, port, hostname: '127.0.0.1' }, () => {
+  console.log(`🔍 RepoLens API running on http://127.0.0.1:${port}`);
 });

@@ -40,6 +40,21 @@
   --radius-xl: 28px;
 }
 
+body.light {
+  --bg-primary: #f0f4f8;
+  --bg-secondary: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-glass: rgba(255, 255, 255, 0.65);
+  --border: rgba(56, 68, 100, 0.15);
+  --border-light: rgba(99, 115, 155, 0.1);
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --gradient-hero: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 40%, #cbd5e1 70%, #f0f4f8 100%);
+  --shadow-glow: 0 0 30px rgba(109, 92, 255, 0.1);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
 /* ═══════════════════════════════════════════
    Global Reset & Base
    ═══════════════════════════════════════════ */

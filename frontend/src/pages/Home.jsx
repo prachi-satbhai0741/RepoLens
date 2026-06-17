@@ -21,8 +21,21 @@ export default function Home() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ repoUrl }),
       })
-      const data = await response.json()
-      if (!response.ok) throw new Error(data.error || 'Analysis failed')
+      
+      let data = {};
+      let text = '';
+      try {
+        text = await response.text();
+        if (text) {
+          data = JSON.parse(text);
+        }
+      } catch (e) {
+        throw new Error(`Server returned invalid JSON (Status: ${response.status}). Body: "${text.slice(0, 100)}"`);
+      }
+
+      if (!response.ok) {
+        throw new Error(data.error || `Analysis failed with status ${response.status}. Body: "${text.slice(0, 100)}"`);
+      }
       navigate('/results', { state: { data, repoUrl } })
     } catch (err) {
       setError(err.message)

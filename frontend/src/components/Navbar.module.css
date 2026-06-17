@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 14, 23, 0.75);
+  background: var(--bg-glass);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid var(--border);
@@ -28,11 +28,6 @@
 
 .brand:hover {
   opacity: 0.85;
-}
-
-.logo {
-  font-size: 1.5rem;
-  filter: drop-shadow(0 0 8px var(--accent-glow));
 }
 
 .brandText {
@@ -76,8 +71,25 @@
   border-color: rgba(109, 92, 255, 0.2);
 }
 
-.linkIcon {
-  font-size: 1rem;
+.themeToggle {
+  background: rgba(109, 92, 255, 0.1);
+  border: 1px solid rgba(109, 92, 255, 0.2);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  margin-left: 0.5rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.themeToggle:hover {
+  background: rgba(109, 92, 255, 0.2);
+  border-color: rgba(109, 92, 255, 0.3);
 }
 
 .linkLabel {
