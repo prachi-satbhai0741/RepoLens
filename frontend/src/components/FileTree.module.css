@@ -1,0 +1,44 @@
+.container {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.node {
+  line-height: 1.6;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.1rem 0.25rem;
+  border-radius: 4px;
+  color: #8b949e;
+}
+
+.row:hover {
+  background: #21262d;
+}
+
+.dir {
+  cursor: pointer;
+  color: #e6edf3;
+}
+
+.icon {
+  font-size: 0.7rem;
+  width: 12px;
+  display: inline-block;
+}
+
+.name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

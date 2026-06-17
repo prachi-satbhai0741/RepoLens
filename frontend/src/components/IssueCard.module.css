@@ -1,0 +1,41 @@
+.card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-left: 3px solid;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #e6edf3;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+  border: 1px solid;
+}
+
+.desc {
+  font-size: 0.85rem;
+  color: #8b949e;
+  line-height: 1.5;
+  margin-bottom: 0.4rem;
+}
+
+.file {
+  font-size: 0.75rem;
+  color: #58a6ff;
+  font-family: monospace;
+}
