@@ -1,0 +1,97 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  min-height: calc(100vh - 64px);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.backBtn {
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  color: var(--text-primary);
+  transition: all 0.2s;
+}
+
+.backBtn:hover {
+  border-color: rgba(109, 92, 255, 0.3);
+  background: rgba(109, 92, 255, 0.08);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  flex: 1;
+}
+
+.loading {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 4rem 1rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.loading::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  margin-left: 0.6rem;
+  vertical-align: middle;
+  animation: rotate 0.7s linear infinite;
+}
+
+.error {
+  text-align: center;
+  color: var(--red);
+  padding: 2rem;
+  font-size: 0.95rem;
+}
+
+.reviewBox {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.reviewText {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  line-height: 1.8;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+}
+
+/* Markdown-like styling for review content */
+.reviewText h1,
+.reviewText h2,
+.reviewText h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
