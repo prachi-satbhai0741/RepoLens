@@ -1,0 +1,2 @@
+# Ignore CSS for GitHub language statistics to increase JavaScript percentage
+*.css linguist-detectable=false
